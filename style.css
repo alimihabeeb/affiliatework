@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: rgba(81, 81, 216, 0.459);
+}
+
+div.main {
+    height: auto;
+    width: 100%;
+}
+
+div.main div.free {
+    text-align: center;
+    margin: 4%;
+}
+
+div.main div.free h2 {
+    padding: 1%;
+    font-size: 1.8rem;
+    color: white;
+}
+
+div.main div.free p {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+div.main div.reg {
+    height: 80vh;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+div.main div.reg div.register {
+    margin: 0;
+    padding: 0;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.main div.reg div.register button {
+    padding: 1%;
+    background-color: black;
+    border: 1.5px solid burlywood;
+    border-radius: 15px;
+}
+
+div.main div.reg div.register button a {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+div.main div.reg div.register div.count {
+    text-align: center;
+}
+
+div.main div.reg div.freebanner {
+    width: 45%;
+    margin: 1%;
+    padding: 0;
+    background-image: url(./designA.JPG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
