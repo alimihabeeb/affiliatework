@@ -1,4 +1,57 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How To Design & Sell Huge</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="landingImage"></div>
+        <div class="free">
+            <h2>
+                This training is for you if you really want to
+            </h2>
+            <p>
+                LEARN STEP BY STEP ON HOW TO DESIGN AS A <br> PRO AND AS WELL HOW TO MAKE HUGE SALES
+            </p>
+        </div>
+        <div class="cont">
+            <div class="contheader">
+                <h3>Main Content To Learn</h3>
+
+            </div>
+            <div class="contbody">
+                <div class="contbodyimg">
+                    <div class="design"></div>
+                    <div class="selling"></div>
+                    <div class="administrative">
+                    </div>
+                </div>
+                <div class="contbodycontent">
+                    <div class="designingskill">
+                        <h5>DESIGNING SKILL - DESIGN LIKE PRO</h5>
+                        <p>Learn step by step from the Beginner Level to the Professional Level. All theory and raw practical in creating all form of Designs (E-fyers, Business Content & More), Photo Editing & Branding.</p>
+                    </div>
+                    <div class="sellingskill">
+                        <h5>SELLING SKILL - HOW TO SELL YOUR SKILL</h5>
+                        <p>Leran how to sell and build income for yourself.</p>
+                    </div>
+                    <div class="administrativeskill">
+                        <h5>ADMINISTRATIVE SKILL - HOW TO MANAGE SEVERAL ISSUES</h5>
+                        <p>Learn how to build client amd manage them as well as solving issues inline with desisgns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reg">
+            <div class="register">
+                <button>
+            <a href=* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +63,8 @@ html {
 
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: rgba(81, 81, 216, 0.459);
+    /* background-color: rgba(81, 81, 216, 0.459); */
+    overflow-x: hidden;
 }
 
 div.main {
@@ -18,23 +72,98 @@ div.main {
     width: 100%;
 }
 
-div.main img{
-    
+div.landingImage {
+    background-image: url(./designC.JPG);
+    max-width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 div.main div.free {
     text-align: center;
-    margin: 4%;
+    margin: 1%;
 }
 
 div.main div.free h2 {
-    padding: 1%;
-    font-size: 1.8rem;
-    color: white;
+    padding: 0.7%;
+    /* font-size: 2vw; */
+    font-weight: lighter;
 }
 
 div.main div.free p {
     text-transform: capitalize;
-    font-size: 1.7rem;
+    /* font-size: 2vw; */
+    /* word-spacing: 0.5vw; */
+    font-weight: bolder;
+}
+
+div.main div.cont {
+    height: 70vh;
+    width: 100vw;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main div.cont div.contheader {
+    width: 20vw;
+}
+
+div.main div.cont div.contheader h3 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    text-transform: uppercase;
+    /* font-size: 1.8vw; */
+}
+
+div.main div.cont div.contbody {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.main div.cont div.contbody div.contbodyimg {
+    width: 10vw;
+    height: 50vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.main div.cont div.contbody div.contbodyimg::before {
+    content: "";
+    position: absolute;
+    width: 1%;
+    height: 34%;
+    z-index: -1;
+    background-color: black;
+}
+
+div.main div.cont div.contbody div.contbodyimg div.design,
+div.main div.cont div.contbody div.contbodyimg div.selling,
+div.main div.cont div.contbody div.contbodyimg div.administrative {
+    background-image: url(./designA.JPG);
+    border-radius: 50%;
+    height: 19%;
+    width: 78%;
+    background-size: contain;
+}
+
+div.main div.cont div.contbody div.contbodycontent {
+    width: 90vw;
+    height: 50vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 div.main div.reg {
@@ -59,13 +188,13 @@ div.main div.reg div.register {
 div.main div.reg div.register button {
     padding: 1%;
     background-color: black;
-    border: 1.5px solid burlywood;
+    border: 1.5px solid transparent;
     border-radius: 15px;
 }
 
 div.main div.reg div.register button a {
     text-transform: capitalize;
-    font-size: 1.8rem;
+    /* font-size: 1.8vw; */
     text-decoration: none;
     color: white;
 }
@@ -78,7 +207,7 @@ div.main div.reg div.freebanner {
     width: 45%;
     margin: 1%;
     padding: 0;
-    background-image: url(./designA.JPG);
+    background-image: url(./designB.JPG);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
